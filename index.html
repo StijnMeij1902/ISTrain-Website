@@ -181,27 +181,43 @@
       <button class="team-tab on" id="tab-2526" onclick="showTeam('2526')" data-en="25/26 Team" data-pt="Equipa 25/26">25/26 Team</button>
       <button class="team-tab" id="tab-2425" onclick="showTeam('2425')" data-en="24/25 Team" data-pt="Equipa 24/25">24/25 Team</button>
     </div>
-    <div class="team-panel" id="panel-board">
-      <div style="margin-bottom:2rem">
-        <div class="pf" style="height:400px;border:1px solid rgba(60,133,197,.1);margin-bottom:2rem"><img src="About us/Board/Board.jpg" alt="ISTrain Board" style="width:100%;height:100%;object-fit:cover;display:block"><div class="pcap" data-en="ISTrain Board &middot; IST Lisboa" data-pt="Direcao ISTrain &middot; IST Lisboa">ISTrain Board &middot; IST Lisboa</div></div>
-        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem">
-          <div style="background:var(--dark2);border:1px solid rgba(60,133,197,.16);border-radius:var(--r);overflow:hidden">
-            <div style="height:280px;background:#000"><img src="About us/Marketing, Operations & Logistics/Aliya Ibrahmo.png" alt="Aliya Ibrahimo" style="width:100%;height:100%;object-fit:cover;display:block"></div>
-            <div style="padding:1.2rem 1.3rem 1.4rem;border-top:3px solid var(--bl)">
-              <div style="font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:var(--white);margin-bottom:.2rem">Aliya Ibrahimo</div>
-              <div style="font-family:'Space Mono',monospace;font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--bl)" data-en="President" data-pt="Presidente">President</div>
-            </div>
-          </div>
-          <div style="background:var(--dark2);border:1px solid rgba(60,133,197,.16);border-radius:var(--r);overflow:hidden">
-            <div style="height:280px;background:#000"><img src="About us/Powertrain & Energy Systems/Miguel Meninas.png" alt="Miguel Meninas" style="width:100%;height:100%;object-fit:cover;display:block"></div>
-            <div style="padding:1.2rem 1.3rem 1.4rem;border-top:3px solid var(--bl)">
-              <div style="font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:var(--white);margin-bottom:.2rem">Miguel Meninas</div>
-              <div style="font-family:'Space Mono',monospace;font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--bl)" data-en="Technical Director" data-pt="Diretor Tecnico">Technical Director</div>
-            </div>
-          </div>
+  <div class="team-panel" id="panel-board">
+  <div style="margin-bottom:2rem">
+    
+    <!-- HOU DEZE: De grote foto van het hele board -->
+    <div class="pf" style="height:400px;border:1px solid rgba(60,133,197,.1);margin-bottom:2rem">
+      <img src="About us/Board/Board.jpg" alt="ISTrain Board" style="width:100%;height:100%;object-fit:cover;display:block">
+      <div class="pcap" data-en="ISTrain Board &middot; IST Lisboa" data-pt="Direcao ISTrain &middot; IST Lisboa">ISTrain Board &middot; IST Lisboa</div>
+    </div>
+
+    <!-- PLAK HIER DE NIEUWE GRID: Miguel eerst, Aliya tweede, met 'contain' -->
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem">
+      
+      <!-- Miguel Meninas -->
+      <div style="background:var(--dark2);border:1px solid rgba(60,133,197,.16);border-radius:var(--r);overflow:hidden">
+        <div style="height:280px;background:#000;padding:10px">
+          <img src="About us/Powertrain & Energy Systems/Miguel Meninas.png" alt="Miguel Meninas" style="width:100%;height:100%;object-fit:contain;display:block">
+        </div>
+        <div style="padding:1.2rem 1.3rem 1.4rem;border-top:3px solid var(--bl)">
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:var(--white);margin-bottom:.2rem">Miguel Meninas</div>
+          <div style="font-family:'Space Mono',monospace;font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--bl)" data-en="Technical Director" data-pt="Diretor Tecnico">Technical Director</div>
         </div>
       </div>
-    </div>
+
+      <!-- Aliya Ibrahimo -->
+      <div style="background:var(--dark2);border:1px solid rgba(60,133,197,.16);border-radius:var(--r);overflow:hidden">
+        <div style="height:280px;background:#000;padding:10px">
+          <img src="About us/Marketing, Operations & Logistics/Aliya Ibrahmo.png" alt="Aliya Ibrahimo" style="width:100%;height:100%;object-fit:contain;display:block">
+        </div>
+        <div style="padding:1.2rem 1.3rem 1.4rem;border-top:3px solid var(--bl)">
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:var(--white);margin-bottom:.2rem">Aliya Ibrahimo</div>
+          <div style="font-family:'Space Mono',monospace;font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--bl)" data-en="President" data-pt="Presidente">President</div>
+        </div>
+      </div>
+
+    </div> <!-- Einde Grid -->
+  </div>
+</div>
     <div class="team-panel on" id="panel-2526">
       <p style="color:var(--grey);font-size:.9rem;line-height:1.8;margin-bottom:2rem;text-align:justify" data-en="Click any department to meet the current 25/26 team." data-pt="Clique em qualquer departamento para conhecer a equipa 25/26.">Click any department to meet the current 25/26 team.</p>
       <div class="g3" id="dg"></div>
