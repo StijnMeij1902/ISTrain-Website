@@ -39,7 +39,7 @@ document.querySelectorAll("a,button,.card,.dc,.nc,.mc,.sp-item,.clink,.pf,.cic-c
 document.getElementById("mbb").addEventListener("click",function(){document.getElementById("mobnav").classList.add("open");});
 document.getElementById("cx").addEventListener("click",function(){document.getElementById("mobnav").classList.remove("open");});
 window.addEventListener("scroll",function(){var n=document.getElementById("nav");if(n)n.classList.toggle("sc",scrollY>60);});
-(function(){var s=["Different Studies","Different Nationalities","The Same Passion","The Same Motivation","One ISTrain"];var el=document.getElementById("tki");if(!el)return;var h="";for(var i=0;i<10;i++)s.forEach(function(x){h+='<span class="tkit">'+x+'<span class="tkd"></span></span>';});el.innerHTML=h;})();
+// Ticker removed: previously generated rotating phrases in the header
 (function(){var ms=[{date:new Date("2025-05-01"),en:"May 2025",pt:"Mai 2025",ten:"Railway Summit",tpt:"Cimeira Ferroviaria"},{date:new Date("2025-06-01"),en:"Jun 2025",pt:"Jun 2025",ten:"Start design",tpt:"Inicio do design"},{date:new Date("2025-09-01"),en:"Sep 2025",pt:"Set 2025",ten:"Design Freeze",tpt:"Congelamento do Design"},{date:new Date("2025-12-01"),en:"Dec 2025",pt:"Dez 2025",ten:"Start manufacturing",tpt:"Inicio do fabrico"},{date:new Date("2026-03-01"),en:"Mar 2026",pt:"Mar 2026",ten:"Testing",tpt:"Testes"},{date:new Date("2026-06-01"),en:"Jun 2026",pt:"Jun 2026",ten:"IMechE Challenge",tpt:"Desafio IMechE"}];
 var now=new Date(),total=ms[ms.length-1].date-ms[0].date;
 var prog=Math.max(0,Math.min(1,(now-ms[0].date)/total));

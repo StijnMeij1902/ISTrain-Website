@@ -92,13 +92,7 @@ nav.sc{background:rgba(6,9,15,.95);backdrop-filter:blur(24px);border-bottom:1px 
 .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--bl);transform:scaleY(0);transition:transform .4s;transform-origin:bottom;border-radius:2px 0 0 2px;}
 .card:hover{border-color:rgba(60,133,197,.2);transform:translateX(5px);}.card:hover::before{transform:scaleY(1);}
 .cico{font-size:1.3rem;margin-bottom:.8rem;display:block;}.ct{font-family:"Bebas Neue",sans-serif;font-size:1.5rem;color:var(--bl);margin-bottom:.4rem;}.cd{font-size:1rem;color:var(--grey);line-height:1.7;text-align:justify;}
-/* TICKER */
-.tkw{overflow:hidden;background:rgba(28,60,95,.22);border-top:1px solid rgba(60,133,197,.13);border-bottom:1px solid rgba(60,133,197,.13);padding:.88rem 0;}
-.tki{display:flex;white-space:nowrap;animation:tk 50s linear infinite;}
-.tki:hover{animation-play-state:paused;}
-.tkit{font-family:"Space Mono",monospace;font-size:.88rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.45);padding:0 2.5rem;display:inline-flex;align-items:center;gap:2.5rem;}
-.tkd{width:3px;height:3px;background:var(--bl);border-radius:50%;opacity:.6;}
-@keyframes tk{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+/* Ticker removed */
 /* PAGE BANNER */
 .pb{position:relative;padding:9.5rem 5rem 4.5rem;overflow:hidden;background:var(--black);}
 .pbg{position:absolute;inset:0;background-image:linear-gradient(rgba(60,133,197,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(60,133,197,.03) 1px,transparent 1px);background-size:56px 56px;}
